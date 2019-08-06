@@ -15,6 +15,7 @@ res.send( {dateNow: now});
 
 require('../src/controllers/authController')(app);
 require('../src/controllers/userController')(app);
+require('../src/controllers/projectController')(app);
 
 app.listen(3000, function () {
     console.log('O servidor está rodando na porta 3000!');
